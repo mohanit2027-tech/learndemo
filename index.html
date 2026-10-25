@@ -1,1 +1,165 @@
-new file
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Git and GitHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Git & GitHub</h1>
+    <p>Understand Version Control Visually</p>
+</header>
+
+<main class="container">
+
+    <!-- Introduction -->
+    <section>
+        <h2>What are Git and GitHub?</h2>
+
+        <div class="cards">
+
+            <div class="card git">
+                <h3>🔧 Git</h3>
+                <p>Git is a version control system.</p>
+                <p>It tracks changes in your code and
+                helps you manage different versions.</p>
+                <p><b>Example:</b> Save and track project changes.</p>
+            </div>
+
+            <div class="card github">
+                <h3>🌐 GitHub</h3>
+                <p>GitHub is an online platform for hosting Git repositories.</p>
+                <p>It helps developers share code and collaborate.</p>
+                <p><b>Example:</b> Upload your project online.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Workflow -->
+    <section>
+        <h2>Git Workflow</h2>
+        <p class="description">
+            Follow these steps to understand how Git works.
+        </p>
+
+        <div class="workflow">
+
+            <div class="step">
+                <span>01</span>
+                <h3>Code</h3>
+                <p>Working Directory</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <span>02</span>
+                <h3>Git Add</h3>
+                <p>Staging Area</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <span>03</span>
+                <h3>Git Commit</h3>
+                <p>Local Repository</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <span>04</span>
+                <h3>Git Push</h3>
+                <p>GitHub Repository</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Commands -->
+    <section>
+        <h2>Important Git Commands</h2>
+
+        <div class="cards">
+
+            <div class="card command">
+                <h3>git init</h3>
+                <p>Creates a new local Git repository.</p>
+            </div>
+
+            <div class="card command">
+                <h3>git add .</h3>
+                <p>Stages changes in the current directory.</p>
+            </div>
+
+            <div class="card command">
+                <h3>git commit</h3>
+                <p>Records staged changes in the repository.</p>
+            </div>
+
+            <div class="card command">
+                <h3>git push</h3>
+                <p>Sends local commits to GitHub.</p>
+            </div>
+
+            <div class="card command">
+                <h3>git pull</h3>
+                <p>Fetches and integrates remote changes.</p>
+            </div>
+
+            <div class="card command">
+                <h3>git clone</h3>
+                <p>Copies an existing repository to your computer.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Example -->
+    <section>
+        <h2>Practical Example</h2>
+
+        <p class="description">
+            See how a developer uploads a project to GitHub.
+        </p>
+
+        <button onclick="showExample()">Show Example</button>
+
+        <div id="output">
+            <p>Click the button to see the steps.</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Learn Git & GitHub | Beginner-Friendly Guide</p>
+</footer>
+
+<script>
+    function showExample() {
+        document.getElementById("output").innerHTML = `
+            <h3>Uploading a Project</h3>
+            <p>1. Create your project files.</p>
+            <p>2. Run <code>git init</code></p>
+            <p>3. Run <code>git add .</code></p>
+            <p>4. Run <code>git commit -m "First commit"</code></p>
+            <p>5. Create a repository on GitHub.</p>
+            <p>6. Connect your local repository to GitHub.</p>
+            <p>7. Run <code>git push -u origin main</code></p>
+            <h3 class="success">Success! Your code is on GitHub.</h3>
+        `;
+    }
+</script>
+
+</body>
+</html>
+```
